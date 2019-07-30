@@ -18,7 +18,7 @@ public class HelloController {
 	//@ResponseBody
 	@RequestMapping("/hello")
 	public String Hello(Model m) {
-		System.out.println("方法被执行，即将打开"+url);
+		System.out.println("该方法被执行，即将打开"+url);
 		m.addAttribute("now", DateFormat.getDateTimeInstance().format(new Date()));
 		return "hello";
 	}
